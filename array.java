@@ -8,14 +8,18 @@ class array
         //int r = scan.nextInt();
         System.out.print("number of student:");
         int c = scan.nextInt();
-        int [][] a= new int[2][c]; 
+        int [][][] a= new int[2][2][c]; 
 
         for(int i = 0; i<2; i++)
         {
-            for(int j = 0; j<c; j++)
+            for(int j = 0; j<2; j++)
             {
-                System.out.print("class"+ i +" student" + j +":");
-                a[i][j] = scan.nextInt();
+                
+                for(int k=0; k<c; k++)
+                {
+                    System.out.print("block"+ i +"class"+ j +" student" + k +":");
+                    a[i][j][k] = scan.nextInt();
+                }
             }
             System.out.println();
     
@@ -24,9 +28,14 @@ class array
 
         for(int i=0; i<2; i++)
         {
-            for(int j=0; j<5; j++)
+            
+            for(int j=0; j<2; j++)
             {
-                System.out.print(a[i][j] + " ");
+                for(int k=0; k<c; k++)
+                {
+                    System.out.print(a[i][j][k] + " ");
+                }
+                System.out.println();
             }
             System.out.println();
         }
