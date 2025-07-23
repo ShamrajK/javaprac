@@ -1,0 +1,19 @@
+
+JAGGED DATA
+
+2d array:
+int[][] a = new int[3][];
+a[0] = new int[4];
+a[1] = new int[8];
+a[2] = new int[6];
+
+3d array :
+
+int[][][] a = new int[2][][];
+a[0] = new int[3][];
+a[1] = new int[2][];
+a[0][0] = new int[2];
+a[0][1] = new int[3];
+a[0][2] = new int[3];
+a[1][0] = new int[2];
+a[1][1] = new int[3];
