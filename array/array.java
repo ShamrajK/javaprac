@@ -10,7 +10,7 @@ class array
         int c = scan.nextInt();
         int [][][] a= new int[2][2][c]; 
 
-        for(int i = 0; i<2; i++)
+        for(int i = 0; i<a.length; i++)
         {
             for(int j = 0; j<2; j++)
             {
