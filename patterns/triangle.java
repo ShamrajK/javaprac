@@ -83,6 +83,23 @@ public class triangle {
         System.out.println();
     }
 
+    public static void inverted_right_half_triange(int n)
+    {
+        for(int i=n; i>=1; i--)
+        {
+            for(int k=1; k<=n-i; k++)
+            {
+                System.out.print("  ");
+            }   
+            for(int j=1; j<=i; j++)
+            {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+    }
+
     public static void inverted_half_triange(int n)
     {
         for(int i=n; i>=1; i--)
@@ -137,6 +154,27 @@ public class triangle {
         }
         System.out.println();
     }
+
+    static void numeric_tri(int n)
+    {
+        int count=1;
+        for(int i=1; i<=n; i++)
+        {
+            for(int j=1; j<=i; j++)
+            {
+                if (count<10)
+                {
+                    System.out.print("0");
+                }
+        
+                System.out.print(count + " ");
+                count++;
+            }
+            System.out.println();
+        }
+        System.out.println();
+    }
+
     public static void main(String []args)
     {
         Scanner scan = new Scanner(System.in);
@@ -144,12 +182,14 @@ public class triangle {
         int n = scan.nextInt();
         triange(n);
         hollow_tri(n);
-        alp_tripattern(n);
         right_align_triange(n);
         inverted_half_triange(n);
+        inverted_right_half_triange(n);
         pyramid(n);
         inverted_pyramid(n);
+        alp_tripattern(n);
         alp_diff_tripattern(n);
+        numeric_tri(n);
     }
     
 }
