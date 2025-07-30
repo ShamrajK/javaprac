@@ -30,7 +30,7 @@ public class arrayJaggedMethod {
         return arr;
 
     }
-    public static void printarr(int arr[][][])
+     public static void printarr(int arr[][][])
     {
         
         for(int i=0;i<arr.length;i++)
@@ -47,11 +47,13 @@ public class arrayJaggedMethod {
         }
 
     }
+   
     public static void main(String []args)
     {
         int input[][][]=arrayinput();
+        printarr(arrayinput());
         
-        printarr(input);
+        
     }
     
 }
